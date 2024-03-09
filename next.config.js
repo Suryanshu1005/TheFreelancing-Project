@@ -6,7 +6,7 @@ const nextConfig = {
     NEXT_PUBLIC_DOMAIN: process.env.NEXT_PUBLIC_DOMAIN,
   },
   images: {
-    domains: ["lh3.googleusercontent.com"], // Add your hostname here
+    domains: ["lh3.googleusercontent.com", "img.freepik.com"], // Add your hostname here
   },
 };
 

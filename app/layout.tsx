@@ -16,22 +16,13 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = async ({children}: {children: React.ReactNode}) => {
-  const {user} = await getUser(cookies);
-  const userId: string | undefined = user && user?.user?.id;
-
-  console.log("what is user", user);
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} max-w-[500px] md:max-w-[760px] largeLaptops:max-w-[980px] xlDisplay:max-w-[1200px] w-[100%] m-auto bg-green-300 from-green-400 to-yellow-800`}
+        className={`${montserrat.className} min-h-screen w-[100%] m-auto bg-green-300 from-green-400 to-yellow-800`}
+        // className={`${montserrat.className} min-h-screen max-w-[400px] md:max-w-[760px] largeLaptops:max-w-[980px] xlDisplay:max-w-[1200px] w-[100%] m-auto bg-green-300 from-green-400 to-yellow-800`}
         suppressHydrationWarning={true}
       >
-        <Navbar
-          user={userId}
-          profile_url={user.user?.user_metadata.avatar_url}
-          full_name={user.user?.user_metadata.full_name}
-          email={user.user?.user_metadata.email}
-        />
         {children}
       </body>
     </html>

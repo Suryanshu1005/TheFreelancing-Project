@@ -2,8 +2,8 @@ import React from "react";
 
 const WhatWeOffer = () => {
   return (
-    <section className="bg-white rounded-lg space-y-5 mb-10 mt-10">
-      <div className="text-4xl font-bold text-center pt-5">Why join us?</div>
+    <section className="bg-white rounded-lg space-y-5 m-6">
+      <div className="text-3xl font-bold text-center pt-5">Why join us?</div>
       <div className="pl-5 pr-5 pb-5 max-w">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry&apos;s standard dummy text

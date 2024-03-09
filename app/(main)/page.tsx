@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import {loginWithGoogle} from "@/https/auth";
 import {isAuth} from "@/https/get";
@@ -22,7 +22,7 @@ const Main = () => {
         </div>
         <div className=" flex items-center justify-center mt-6">
           <Image
-            className="rounded-lg w-[370px] md:w-[375px] lg:w-[500px]"
+            className="rounded-lg w-[300px] md:w-[375px] lg:w-[500px]"
             src={heroImage}
             alt="hero_image"
           />
@@ -31,12 +31,12 @@ const Main = () => {
       <div className="gap-5 flex flex-col justify-center items-center mt-5 lg:flex lg:justify-start lg:items-start lg:flex-row">
         <CTAButton
           variant="outline"
-          className="font-bold text-3xl p-6"
+          className="font-bold text-xl p-6"
           title="Find you first job"
         />
         <CTAButton
           variant="default"
-          className="font-bold text-3xl p-6"
+          className="font-bold text-xl p-6"
           title="Find Freelancer"
         />
       </div>
