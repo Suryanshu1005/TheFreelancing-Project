@@ -86,7 +86,9 @@ const Navbar: FC<Navbar> = ({user, profile_url, full_name, email}) => {
                   <AvatarImage src={profile_url} />
                 </Avatar>
               ) : (
-                <Button onClick={handleWithGoolge}>Login</Button>
+                <Link href="/login">
+                  <Button>Login</Button>
+                </Link>
               )}
             </button>
             {/* Dropdown menu for user */}
